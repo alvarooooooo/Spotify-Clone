@@ -1,0 +1,18 @@
+---
+interface Props {
+  href?: string;
+  extraStyles?: string;
+}
+const { href, extraStyles } = Astro.props;
+---
+
+<div
+  class={`bg-zinc-900 rounded-full self-center h-full flex items-center ${extraStyles}`}
+>
+  <a
+    class="flex hover:text-zinc-100 items-center font-normal transition duration-300"
+    href={href}
+  >
+    <slot />
+  </a>
+</div>

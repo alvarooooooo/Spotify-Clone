@@ -1,0 +1,41 @@
+---
+import SpotifyIcon from "@/icons/Logo.astro";
+import NavBarItem from "./NavBarItem.astro";
+import HomeIcon from "@/icons/Home.astro";
+import SearchIcon from "@/icons/Search.astro";
+import BrowseIcon from "@/icons/Browse.astro";
+import CreateIcon from "@/icons/Create.astro";
+---
+
+<nav class="flex text-secondary">
+  <div class="mx-3 my-2 px-2">
+    <SpotifyIcon />
+  </div>
+  <div class="flex w-full h-full justify-center">
+    <NavBarItem href="/" extraStyles="ml-2 p-3">
+      <HomeIcon />
+    </NavBarItem>
+    <div class="px-2">
+      <NavBarItem>
+        <div class="px-3">
+          <button class="flex items-center cursor-pointer hover:text-zinc-100">
+            <SearchIcon />
+          </button>
+        </div>
+        <input
+          class="placeholder-secondary"
+          placeholder="What do you want to play?"
+        />
+
+        <div class="px-3 ltr border-l-1 border-secondary">
+          <NavBarItem href="/Browse">
+            <BrowseIcon />
+          </NavBarItem>
+        </div>
+      </NavBarItem>
+    </div>
+    <NavBarItem href="/" extraStyles="p-3">
+      <CreateIcon />
+    </NavBarItem>
+  </div>
+</nav>
