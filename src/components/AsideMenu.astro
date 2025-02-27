@@ -1,6 +1,8 @@
 ---
 import LibraryIcon from "@/icons/Library.astro";
-
+import SearchIcon from "@/icons/Search.astro";
+import SortListIcon from "@/icons/SortList.astro";
+import RadioItem from "@/components/RadioItem.astro";
 import SideMenuItem from "./SideMenuItem.astro";
 import SideMenuCard from "./SideMenuCard.astro";
 
@@ -14,9 +16,30 @@ import { playlists } from "@/lib/data";
         <LibraryIcon />
         Your Library
       </SideMenuItem>
-      <div class="py-2 gap-2">
-        <div>AAA</div>
-        {playlists.map((playlist) => <SideMenuCard playlist={playlist} />)}
+      <div class="text-white flex gap-2 my-2 mx-4 text-sm min-h-8">
+        <RadioItem>Playlists</RadioItem>
+        <RadioItem>Artists</RadioItem>
+        <RadioItem>Albums</RadioItem>
+      </div>
+
+      <div class="pb-2 gap-2">
+        <div class="text-secondary flex justify-between py-3 px-5">
+          <div
+            class="cursor-pointer hover:text-zinc-100 hover:bg-zinc-800 rounded-full p-2 transition duration-300"
+          >
+            <SearchIcon width={16} height={16} />
+          </div>
+
+          <button
+            class="flex items-center gap-2 text-sm cursor-pointer hover:text-zinc-100 transition duration-300"
+          >
+            Recents
+            <SortListIcon />
+          </button>
+        </div>
+        <div class="px-2">
+          {playlists.map((playlist) => <SideMenuCard playlist={playlist} />)}
+        </div>
       </div>
     </ul>
   </div>

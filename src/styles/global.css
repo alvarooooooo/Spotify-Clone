@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-secondary: #b3b3b3
+  --color-secondary: #b3b3b3;
+  --color-background-highlight: #FFFFFF1A;
+  --color-background-hover: hsla(0, 0%, 100%, .14);
 }
