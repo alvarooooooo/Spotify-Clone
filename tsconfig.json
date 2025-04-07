@@ -28,6 +28,8 @@
       "@/services": [
         "src/services/*"
       ]
-    }
-  },
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  }
 }

@@ -8,12 +8,12 @@ interface Props {
 const { playlist } = Astro.props;
 const { id, cover, title, artists, color } = playlist;
 
-const artistsNames = artists.join(",");
+const artistsNames = artists.join(", ");
 ---
 
 <a
   href={`/playlist/${id}`}
-  class="playlist-item flex relative p-2 overflow-hidden items-center gap-3 rounded-md hover:big-zinc-800"
+  class="playlist-item flex relative p-2 overflow-hidden items-center gap-3 rounded-md hover:bg-zinc-800"
 >
   <picture class="h-12 w-12 flex-none">
     <img
@@ -24,10 +24,10 @@ const artistsNames = artists.join(",");
   </picture>
 
   <div class="flex flex-auto flex-col truncate">
-    <h4 class="text-sm">
+    <h4>
       {title}
     </h4>
-    <span class="text-xs text-gray-400">
+    <span class="text-sm text-gray-400">
       {artistsNames}
     </span>
   </div>
