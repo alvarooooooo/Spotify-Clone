@@ -1,5 +1,7 @@
 Project created following YT video: [Clon de Spotify DESDE CERO con Astro 3, React JS, Svelte y TailwindCSS](https://www.youtube.com/watch?v=WRc8lz-bp78&ab_channel=midulive)
+
 Replicates the Spotify's website using Astro, React, Svelte, TailwindCSS and Typescript.
+
 The video does not completely create the Spotify clone, the rest is implemented by me
 
 ## Astro Starter Kit: Basics
