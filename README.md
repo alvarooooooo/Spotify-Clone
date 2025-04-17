@@ -1,4 +1,8 @@
-# Astro Starter Kit: Basics
+Project created from YT video: [](https://www.youtube.com/watch?v=WRc8lz-bp78&ab_channel=midulive)
+Replicates the Spotify's website using Astro, React, Svelte, TailwindCSS and Typescript.
+The video does not completely create the Spotify clone, the rest is implemented by me
+
+## Astro Starter Kit: Basics
 
 ```sh
 npm create astro@latest -- --template basics
