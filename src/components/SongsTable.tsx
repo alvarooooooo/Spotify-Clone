@@ -34,7 +34,7 @@ export const SongsTable = ({ songs }: Props) => {
                     {idx + 1}
                   </span>
                   <div className="absolute top-0 h-4 w-4 opacity-0 group-hover:opacity-100">
-                    <SongsTablePlay />
+                    <SongsTablePlay albumId={song.albumId} songId={song.id} />
                   </div>
                 </div>
               </td>
